@@ -1,3 +1,79 @@
 body {
   background: peachpuff;
 }
+
+.container {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  gap: 30px;
+}
+
+.inner-container {
+  display: flex;
+  flex: 15;
+  gap: 30px;
+}
+
+
+.a, .b, .c, .d, .e, .f, .g, .h{
+  background-color: #d8d8d8;
+  border: 1px solid #5e5d5d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.a {
+  flex: 1;
+}
+
+.inner-container {
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+}
+
+.h {
+  flex: 5;
+}
+
+.inner-inner-container{
+  display: flex;
+  gap: 30px;
+  flex: 3;
+  flex-wrap: wrap;
+}
+.inner-inner-inner-container{
+  display: flex;
+  gap: 30px;
+  flex: 3;
+  flex-basis: 100%;
+}
+
+
+.b, .c, .d, .e, .f, .g{
+  flex: 1;
+}
+
+@media (min-width: 1240px){
+
+  .container {
+    flex-wrap: wrap;
+    flex-direction:row;
+  }
+  .inner-inner-container{
+    flex-basis: 50%;
+    flex-wrap: wrap;}
+  
+  .inner-inner-inner-container{
+    flex-basis: 100%;
+    flex-wrap: wrap;
+  }
+  .a {
+    flex-basis: 100%;
+  }
+  
+}
